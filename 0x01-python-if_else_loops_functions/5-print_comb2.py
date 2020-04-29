@@ -2,5 +2,5 @@
 for numbers in range(00, 100):
     if numbers < 99:
         print("{:02d}, ".format(numbers), end="")
-    else: 
+    else:
         print("{:02d}".format(numbers))
