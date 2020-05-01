@@ -12,7 +12,7 @@ if __name__ == "__main__":
     a = int(argv[1])
     b = int(argv[3])
     if oper == "+":
-        print("{} {} {} = {}".format(a, oper, b, add(a, b))) 
+        print("{} {} {} = {}".format(a, oper, b, add(a, b)))
     if oper == "-":
         print("{} {} {} = {}".format(a, oper, b, sub(a, b)))
     if oper == "*":
