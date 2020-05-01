@@ -9,10 +9,13 @@ if __name__ == "__main__":
     if oper != "+" and oper != "-" and oper != "*" and oper != "/":
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-    calc = 0
-    num1 = sys.argv[1]
-    num2 = sys.argv[3]
-    num_args = len(sys.argv)
-    for i in range(1, num_args):
-        calc += int(sys.argv[i])
-    print("{} {} {} = {}".format(num1, oper, num2, calc))    
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    if oper == "+":
+        print("{} {} {} = {}".format(a, oper, b, add(a, b)))    
+    if oper == "-":
+        print("{} {} {} = {}".format(a, oper, b, sub(a, b)))    
+    if oper == "*":
+        print("{} {} {} = {}".format(a, oper, b, mul(a, b)))    
+    if oper == "/":
+        print("{} {} {} = {}".format(a, oper, b, div(a, b)))    
