@@ -2,8 +2,8 @@
 def element_at(my_list, idx):
     for idx in my_list:
         idx = my_list.index(idx)
-        if idx < 0:
-            return None
-        if idx > len(my_list):
-            return None
+    if idx < 0:
+        return None
+    if idx > len(my_list):
+        return None
     return idx
