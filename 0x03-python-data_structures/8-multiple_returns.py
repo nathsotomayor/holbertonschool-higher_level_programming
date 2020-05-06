@@ -4,4 +4,4 @@ def multiple_returns(sentence):
         sentence[0] = None
     len_tup = len(sentence)
     char_tup = sentence[0]
-    return len_tup, char_tup;
+    return len_tup, char_tup
