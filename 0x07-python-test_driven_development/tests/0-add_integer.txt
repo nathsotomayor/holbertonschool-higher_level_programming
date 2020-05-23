@@ -1,0 +1,148 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+This is a test file for add_integer function
+``add_integer`` from the ``0-add_integer`` module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Try next test cases:
+
+a and b are not int or float:
+
+    >>> add_integer("4", "7")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer([3], [5])
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer((3,3), (4,5))
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+a is not int or float:
+
+    >>> add_integer("betty", 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer([1], 8)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer((4,1), 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(None, 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(True, 6)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(False, 9)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+b is not int or float:
+
+    >>> add_integer(2, "betty")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer(8, [1])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer(4, (5,4))
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer(3, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer(6, True)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer(9, False)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+a and b are float:
+
+    >>> add_integer(3.8, 4.6)
+    7
+    >>> add_integer(7.2, 5.5)
+    12
+
+a is float:
+
+    >>> add_integer(3.8, 4)
+    7
+    >>> add_integer(7.2, 5)
+    12
+
+b is float:
+
+    >>> add_integer(3, 4.6)
+    7
+    >>> add_integer(7, 5.3)
+    12
+
+a and b are negative numbers:
+
+    >>> add_integer(-8, -4)
+    -12
+
+    >>> add_integer(-8.6, -4)
+    -12
+
+    >>> add_integer(-8, -4.3)
+    -12
+
+    >>> add_integer(-3.1, -5.7)
+    -8
+
+Passed three arguments:
+
+    >>> add_integer(3, 5, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Passed one argument:
+
+    >>> add_integer(2)
+    100
+
+Passed zero arguments:
+
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
