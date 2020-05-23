@@ -27,3 +27,20 @@ first name is not string:
     Traceback (most recent call last):
         ...
     TypeError: first_name must be a string
+
+last name is not string:
+
+    >>> say_my_name("Betty", 5)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+    >>> say_my_name("Nathaly", (u,o))
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+    >>> say_my_name("Holberton", [2])
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
