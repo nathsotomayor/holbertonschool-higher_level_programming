@@ -11,6 +11,14 @@ This is a test file for say_my_name function
 
 Try next test cases:
 
+Correct arguments:
+
+    >>> say_my_name("Betty", "Holberton")
+    My name is Betty Holberton
+
+    >>> say_my_name("Nathaly", "Sotomayor")
+    My name is Nathaly Sotomayor
+
 first name is not string:
 
     >>> say_my_name(5, "Betty")
