@@ -56,10 +56,17 @@ class Rectangle:
         """ Public method that return rectangle perimeter """
         if self.__width == 0 or self.__height == 0:
             per = 0
-            print()
         per = (2 * self.__width) + (2 * self.__height)
+        return per
+
+    def __str__(self):
+        """ Prints rectangle """
+        msg = ""
+        if self.__width == 0 or self.__height == 0:
+            return msg
         for i in range(self.__height):
             for j in range(self.__width):
-                print("#", end="")
-            print()
-        return per
+                msg += "#"
+            if i != self.__height - 1:
+                msg += "\n"
+        return msg
