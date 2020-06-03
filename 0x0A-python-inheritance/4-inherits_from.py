@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Creates a function that verify if an object is
-instance of class or class that inherited from """
+instance of class directly or indirectly """
 
 
 def inherits_from(obj, a_class):
