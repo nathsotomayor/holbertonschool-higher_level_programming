@@ -77,6 +77,17 @@ matrix as None:
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+matrix with row different size:
+
+    >>> matrix_divided([[1, 2],[4, 5, 6]], 7)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+div is a infinite number:
+
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], float("inf"))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 Only one argument:
 
