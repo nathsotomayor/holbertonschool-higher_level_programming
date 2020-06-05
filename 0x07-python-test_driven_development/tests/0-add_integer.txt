@@ -11,7 +11,19 @@ This is a test file for add_integer function
 
 Try next test cases:
 
-a and b are not int or float:
+Verify max infinite number and NaN:
+
+>>> add_integer(1, float("inf"))
+        Traceback (most recent call last):
+        ...
+        OverflowError: cannot convert float infinity to integer
+
+        >>> add_integer(1, float("nan"))
+        Traceback (most recent call last):
+        ...
+        ValueError: cannot convert float NaN to integer
+
+a and b are not int or float
 
     >>> add_integer("4", "7")
     Traceback (most recent call last):
