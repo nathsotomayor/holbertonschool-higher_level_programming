@@ -12,7 +12,7 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     for i, row in enumerate(matrix):
-        if len(row) is not len(matrix[i]):
+        if len(row) is not len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
         if not all([isinstance(j, (int, float)) for j in row]):
             raise TypeError("matrix must be a matrix (list of lists)"
