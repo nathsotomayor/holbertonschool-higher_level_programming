@@ -14,6 +14,6 @@ def text_indentation(text):
             else:
                 line = False
         print(msg, end="")
-        if msg in [".",":","?"]:
+        if msg in [".", ":", "?"]:
             print("", end="\n\n")
             line = True
