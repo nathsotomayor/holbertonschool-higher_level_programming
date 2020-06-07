@@ -13,7 +13,7 @@ class Square(Rectangle):
         self.__size = size
 
     def area(self):
-        """ Defines area method that calc the area of a rectangle """
+        """ Defines area method that calc the area with size attribute """
         return (self.__size * self.__size)
 
     def __str__(self):
