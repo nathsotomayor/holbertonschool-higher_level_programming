@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Creates a class Rectangle based on BaseGeometry """
+""" Creates a class Square based on Rectangle class """
 
 
 Rectangle = __import__("9-rectangle").Rectangle
