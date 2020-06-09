@@ -91,3 +91,13 @@ class Rectangle(Base):
         """ Public method that computes the Rectangle area """
         rect_area = self.__width * self.__height
         return rect_area
+
+    def display(self):
+        """ Displays the rectangle with '#' character """
+        fig = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                fig += "#"
+            if i != self.__height - 1:
+                fig += "\n"
+        print(fig)
