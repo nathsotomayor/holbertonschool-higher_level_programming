@@ -91,7 +91,7 @@ class Rectangle(Base):
         return rect_area
 
     def display(self):
-        """ Displays the rectangle with '#' character """
+        """ Displays the rectangle with '#' character taking care x and y """
         for i in range(self.__y):
             print()
         for j in range(self.__height):
@@ -105,3 +105,17 @@ class Rectangle(Base):
         """ Representation of the Rectangle """
         return "[Rectangle] ({}) {}/{} - {}/"\
                "{}".format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """ Method to assigns an argument to each attribute of class """
+        for attr in range(len(args)):
+            if attr == 0:
+                self.id = args[attr]
+            if attr == 1:
+                self.__width = args[attr]
+            if attr == 2:
+                self.__height = args[attr]
+            if attr == 3:
+                self.__x = args[attr]
+            if attr == 4:
+                self.__y = args[attr]
