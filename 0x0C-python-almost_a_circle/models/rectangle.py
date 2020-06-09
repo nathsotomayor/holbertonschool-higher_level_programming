@@ -95,9 +95,10 @@ class Rectangle(Base):
     def display(self):
         """ Displays the rectangle with '#' character """
         fig = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for i, a in range(self.__height), range(self.__x):
+            for j, b in range(self.__width), range(self.__y):
                 fig += "#"
+                print()
             if i != self.__height - 1:
                 fig += "\n"
         print(fig)
