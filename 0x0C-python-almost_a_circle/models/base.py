@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """ Creates a Base class that is the base of all other classes """
 
 
