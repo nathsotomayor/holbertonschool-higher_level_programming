@@ -49,7 +49,7 @@ class Rectangle(Base):
     def height(self):
         """ Rectangle height """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """ Set value to rectangle height """
@@ -72,7 +72,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-    
+
     @property
     def y(self):
         """ Rectangle 'y' attribute """
@@ -102,8 +102,8 @@ class Rectangle(Base):
             if i != self.__height - 1:
                 fig += "\n"
         print(fig)
-    
+
     def __str__(self):
         """ Representation of the Rectangle """
-        rep_rect = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        rep_rect = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
         return rep_rect
