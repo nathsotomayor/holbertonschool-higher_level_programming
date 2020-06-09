@@ -5,6 +5,7 @@
 class Base:
     """ Initializing Base class """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """ Initializing constructor """
         if id is not None:
