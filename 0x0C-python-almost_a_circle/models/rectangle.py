@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """ Creates a Rectangle class inherits from Base """
-
-
 from models.base import Base
 
 
@@ -94,13 +92,14 @@ class Rectangle(Base):
 
     def display(self):
         """ Displays the rectangle with '#' character """
-        fig = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                fig += "#"
-            if i != self.__height - 1:
-                fig += "\n"
-        print(fig)
+        for i in range(self.__y):
+            print()
+        for j in range(self.__height):
+            for m in range(self.__x):
+                print(" ", end="")
+            for n in range(self.__width):
+                print("#", end="")
+            print()
 
     def __str__(self):
         """ Representation of the Rectangle """
