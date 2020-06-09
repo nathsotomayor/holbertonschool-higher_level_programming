@@ -105,5 +105,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """ Representation of the Rectangle """
-        rep_rect = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
-        return rep_rect
+        return "[Rectangle] ({}) {}/{} - {}/"\
+               "{}".format(self.id, self.x, self.y, self.width, self.height)
