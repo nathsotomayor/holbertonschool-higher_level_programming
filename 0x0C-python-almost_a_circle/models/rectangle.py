@@ -101,3 +101,8 @@ class Rectangle(Base):
             if i != self.__height - 1:
                 fig += "\n"
         print(fig)
+    
+    def __str__(self):
+        """ Representation of the Rectangle """
+        rep_rect = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        return rep_rect
