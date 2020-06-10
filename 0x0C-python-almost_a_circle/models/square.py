@@ -47,3 +47,11 @@ class Square(Rectangle):
                     self.x = value
                 if key == "y":
                     self.y = value
+
+    def to_dictionary(self):
+        """ Dictionary representation of Rectangle class """
+        key_attr = ["id", "size", "x", "y"]
+        dict_rect = {}
+        for key in key_attr:
+            dict_rect[key] = getattr(self, key)
+        return dict_rect
