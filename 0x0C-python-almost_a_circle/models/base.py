@@ -33,3 +33,12 @@ class Base:
             new_dict = [item.to_dictionary() for item in list_objs]
         with open(json_file, 'w', encoding='utf-8') as json_file:
             json_file.write(cls.to_json_string(new_dict))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ List of JSON string representation """
+        if json_string:
+            return json.loads(json_string)
+        else:
+            new_list = []
+            return new_list
