@@ -1,2 +1,2 @@
 -- Lists all cities from California
-SELECT id, name FROM cities WHERE state_id IN (SELECT id FROM states WHERE name = 'California') ORDER BY id DESC;
+SELECT id, name FROM cities where state_id = 1 ORDER BY id ASC;
