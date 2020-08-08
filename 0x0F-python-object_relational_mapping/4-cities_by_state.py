@@ -12,12 +12,12 @@ if __name__ == "__main__":
     # Creating cursor
     cur = db.cursor()
     # Executing query
-    cur.execute("""SELECT c.id, c.name, s.name FROM cities c INNER JOIN states s
-                ON c.state_id = s.id ORDER BY c.id""")
+    cur.execute("""SELECT c.id, c.name, s.name FROM cities c
+                INNER JOIN states s ON c.state_id = s.id ORDER BY c.id""")
     # Obtaining query results
     rows = cur.fetchall()
     for cities in rows:
-         print("(%s, '%s', '%s')" % cities)
+        print("(%s, '%s', '%s')" % cities)
 
     # Close all cursors
     cur.close()
