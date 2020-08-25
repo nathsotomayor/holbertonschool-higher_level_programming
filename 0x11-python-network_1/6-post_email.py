@@ -7,5 +7,5 @@ import sys
 
 if __name__ == "__main__":
     value = {'email': sys.argv[2]}
-    req = requests.get(sys.argv[1], data=value)
-    print(req)
+    req = requests.post(sys.argv[1], data=value)
+    print(req.text)
