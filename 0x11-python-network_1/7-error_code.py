@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Response header value with 'requests' package"""
+"""Print status code with 'requests' package"""
 
 import requests
 import sys
