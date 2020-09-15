@@ -1,7 +1,4 @@
 #!/usr/bin/node
-let cLanguage = 'C is fun';
-let pyLanguage = 'Python is cool';
-let jsLanguage = 'Javascript is amazing';
-console.log(cLanguage);
-console.log(pyLanguage);
-console.log(jsLanguage);
+console.log('C is fun');
+console.log('Python is cool');
+console.log('Javascript is amazing');
