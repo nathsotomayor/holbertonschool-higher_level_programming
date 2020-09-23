@@ -6,7 +6,7 @@ request(url, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-	let  data = JSON.parse(body)
+    const data = JSON.parse(body);
     for (const idx in data) {
       if (numTasks.completed === true) {
         if (!(numTasks.userId in numTasks)) {
